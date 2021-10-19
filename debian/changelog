@@ -1,5 +1,5 @@
-deepin-clone (0.0.1-1) unstable; urgency=medium
+deepin-clone (5.0.10-1ubuntu1) impish; urgency=medium
 
-  * Initial release
+  * New upstream release for impish. 
 
- -- Deepin Packages Builder <packages@deepin.com>  Tue, 22 Aug 2017 09:30:02 +0800
+ -- Ananta Mishra <mishraananta2017@gmail.com>  Tue, 19 Oct 2021 17:41:30 +0545

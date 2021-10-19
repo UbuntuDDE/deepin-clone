@@ -1,26 +1,32 @@
 Source: deepin-clone
 Section: devel
 Priority: optional
-Maintainer: Deepin Packages Builder <packages@deepin.com>
+Maintainer: Ananta Mishra <mishraananta2017@gmail.com>
+XSBC-Original-Maintainer: Deepin Packages Builder <packages@deepin.com>
 Build-Depends:
- debhelper (>=9),
+ cmake,
+ debhelper-compat (=13),
+ deepin-gettext-tools,
+ libdde-file-manager-dev,
+ libdtkcore-dev(>=5.5~),
+ libdtkcore5-bin(>=5.5~),
+ libdtkgui-dev(>=5.5~),
+ libdtkwidget-dev(>=5.5~),
+ pkg-config,
  qtbase5-dev,
  qtbase5-private-dev,
- deepin-gettext-tools,
- libdtkwidget-dev,
- libdtkcore-dev,
- libdtkgui-dev,
- libdtkcore5-bin,
- pkg-config,
  qttools5-dev-tools,
- cmake,
- libdde-file-manager-dev
-Standards-Version: 3.9.8
+Standards-Version: 4.5.1
 
 Package: deepin-clone
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, partclone,
-  jfsutils, ntfs-3g, xfsprogs
+Depends:
+ jfsutils,
+ ntfs-3g,
+ partclone,
+ xfsprogs,
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: Backup Restore Tool
   It is a tool for disk or partition clone, backup and restore, and other functions.
   It supports clone disk to disk, disk to file, partition to partition, partition to file; and restore from file to disk, file to partition.
